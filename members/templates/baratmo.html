@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Espace bar</title>
+  <!--  
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %} -->
+</head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+<body>
+
+<h1>Welcome to my bar !</h1>
+
+<div class="container1">
+
+<div class="item1">    
+<p>Que souhaitez-vous ?</p>
+
+<ul>
+    <li>Bière</li>
+    <li>Spritz</li>
+    <li>Sangria</li>
+</ul>
+</div>
+
+<div class="item2">
+<p>Ou plutôt ?</p>
+
+<ul>
+    <li>Parler des nouvelles</li>
+    <li>Parler amour</li>
+    <li>Parler musique</li>
+</ul>
+</div>
+
+<div class="item3">
+<p>Autres options :</p>
+
+<ul>
+    <li>Monter le son</li>
+    <li>Reprendre un verre</li>
+    <li>Parler au barman</li>
+</ul>
+</div>
+
+</div>
+
+<div class="container2">
+    <img src="{% static 'tequila.gif' %}" alt="Drink1" id="drink1" width="300" height="200">
+    <img src="{% static 'beer.gif' %}" alt="Drink2" id="drink2" width="300" height="200">
+</div>
+
+</body>
+</html>
+
+<!--  python manage.py runserver 192.160.167:8000  to host the server on my mac for others  -->
